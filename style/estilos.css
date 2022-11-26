@@ -1,29 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
 /* movil first 0px - 500px */
 
-nav ul li{
-    list-style-type: none;
+.bkc {
+    background-color: #523A34;
 }
 
-header{
+header {
+    padding: 20px;
     font-size: large;
     display: grid;
     justify-content: center;
-    background-color: chocolate;
+    background-color: #B87D4B;
 }
 
-body{
-    font-family: 'poppins',sans-serif;
+main {
+    background-color: #E5B25D;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
     text-align: center;
     font-weight: bolder;
     display: flex;
@@ -31,46 +36,112 @@ body{
     min-height: 100vh;
 }
 
-footer{
+footer {
     padding: 3em;
     margin-bottom: 0;
-    margin-top: 1.5em;
+    background-color: #F2DD6E;
 }
 
+img{
+    border: 10px double #250902;
+}
+.img-footer{
+    border: none;
+}
+
+.info-foto{
+    display: flex;
+    padding: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: #CD8B76;
+    border: 10px outset #FCF6B1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-txt{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 /* decoracion menu */
+
+.imagencartel {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.textoinicio {
+    margin: 30px 100px 30px 100px;
+}
+
+.parrafo1inicio {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.parrafo2inicio {
+    text-align: center;
+    font-size: xx-large;
+    margin: 30px;
+    border: 10px double chocolate;
+}
+
+.color-boton{
+    background-color: #DD9787;
+}
 
 /* fin decoracion menu */
 
 /* decoracion direccion */
 
-    .imgcartel{
-        display: flex;
-        justify-content: center;
-    }
+.imgcartel {
+    display: flex;
+    justify-content: center;
+}
 
-    /* declaracion de grids */
+.titulodir{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: xx-large;
+    text-decoration: underline;
+}
 
-        .imgcartel{
-            grid-area: imgcartel;
-        }
+.textodir{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 600px;
+    padding: 10px 5px 10px 5px;
+    border: 10px double chocolate;
+}
 
-        .titulodir{
-            grid-area: titud;
-        }
+/* declaracion de grids */
 
-        .textodir{
-            grid-area: textod;
-        }
-    /* fin de declaracion */
-    
-    .direc{
-        display: grid;
-        grid-template-areas: 
+.imgcartel {
+    grid-area: imgcartel;
+}
+
+.titulodir {
+    grid-area: titud;
+}
+
+.textodir {
+    grid-area: textod;
+}
+
+/* fin de declaracion */
+
+.direc {
+    display: grid;
+    grid-template-areas:
         "imgcartel"
         "titud"
         "textod";
-    }
+}
 
 /* fin decoracion direccion */
 
@@ -78,258 +149,10 @@ footer{
 
 /* fin decoracion gustos */
 
-/* decoracion cucuruchos */
 
-    .img-c1, .img-c2{
-        display: flex;
-        justify-content: center;
-    }
 
-    /* declaracion de grids */
-
-        .n-c1{
-            grid-area: nc1;
-        }
-        
-        .n-c2{
-            grid-area: nc2;
-        }
-        
-        .img-c1{
-            grid-area: img1;
-        }
-        
-        .img-c2{
-            grid-area: img2;
-        }
-        
-        .precio-1{
-            grid-area: precio1;
-        }
-        
-        .precio-2{
-            grid-area: precio2;
-        }
-    
-    /* fin declaracion */
-        
-        
-        .img-txt-c1 {
-            display: grid;
-            grid-area: c1;
-            grid-template-areas: 
-            "img1" 
-            "nc1"
-            "precio1" ;
-        }
-        
-        .img-txt-c2{
-            display: grid;
-            grid-area: c2;
-            grid-template-areas: 
-            "img2"
-            "nc2"
-            "precio2";
-        }
-        
-        .grilla-cucuruchos{
-            display: grid;
-            grid-template-areas: 
-            "c1"
-            "c2";
-            gap: 20px;
-            
-        }
-    
-
-/* fin decoracion cucuruchos */
-
-/* decoracion potes */
-
-    .img-p1, .img-p2, .img-p3{
-        display: flex;
-        justify-content: center;
-    }
-
-    /* declaracion de grids */
-
-        .img-p1{
-            grid-area: ip1;
-        }
-
-        .n-p1{
-            grid-area: np1;
-        }
-
-        .precio-p1{
-            grid-area: pp1;
-        }
-
-        .img-p2{
-            grid-area: ip2;
-        }
-
-        .n-p2{
-            grid-area: np2;
-        }
-
-        .precio-p2{
-            grid-area: pp2;
-        }
-
-        .img-p3{
-            grid-area: ip3;
-        }
-
-        .n-p3{
-            grid-area: np3;
-        }
-
-        .precio-p3{
-            grid-area: pp3;
-        }
-
-    /* fin de declaracion */
-
-    .img-txt-p1{
-        display: grid;
-        grid-area: p1;
-        grid-template-areas: 
-        "ip1"
-        "np1"
-        "pp1";
-    }
-
-    .img-txt-p2{
-        display: grid;
-        grid-area: p2;
-        grid-template-areas: 
-        "ip2"
-        "np2"
-        "pp2";
-    }
-
-    .img-txt-p3{
-        display: grid;
-        grid-area: p3;
-        grid-template-areas: 
-        "ip3"
-        "np3"
-        "pp3";
-    }
-
-    .potes{
-        display: grid;
-        grid-template-areas: 
-        "p1"
-        "p2"
-        "p3";
-    }
-/* fin decoracion potes */
+/*decoracion potes*/
 
 /* decoracion tortas */
-    .img-t1, .img-t2, .img-t3, .img-t4{
-        display: flex;
-        justify-content: center;
-    }
-
-    /* declaracion de grids */
-
-        .img-t1{
-            grid-area: it1;
-        }
-
-        .n-t1{
-            grid-area: nt1;
-        }
-
-        .precio-t1{
-            grid-area: pt1;
-        }
-
-        .img-t2{
-            grid-area: it2;
-        }
-
-        .n-t2{
-            grid-area: nt2;
-        }
-
-        .precio-t2{
-            grid-area: pt2;
-        }
-
-        .img-t3{
-            grid-area: it3;
-        }
-
-        .n-t3{
-            grid-area: nt3;
-        }
-
-        .precio-t3{
-            grid-area: pt3;
-        }
-
-        .img-t4{
-            grid-area: it4;
-        }
-
-        .n-t4{
-            grid-area: nt4;
-        }
-
-        .precio-t4{
-            grid-area: pt4;
-        }
-
-    /* fin de declaracion */
-
-    .img-txt-t1{
-        display: grid;
-        grid-area: t1;
-        grid-template-areas: 
-        "it1"
-        "nt1"
-        "pt1";
-    }
-
-    .img-txt-t2{
-        display: grid;
-        grid-area: t2;
-        grid-template-areas: 
-        "it2"
-        "nt2"
-        "pt2";
-    }
-
-    .img-txt-t3{
-        display: grid;
-        grid-area: t3;
-        grid-template-areas: 
-        "it3"
-        "nt3"
-        "pt3";
-    }
-
-    .img-txt-t4{
-        display: grid;
-        grid-area: t4;
-        grid-template-areas: 
-        "it4"
-        "nt4"
-        "pt4";
-    }
-
-    .tortas{
-        display: grid;
-        grid-template-areas: 
-        "t1"
-        "t2"
-        "t3"
-        "t4";
-    }
 
 /* fin decoracion tortas */
-
-
