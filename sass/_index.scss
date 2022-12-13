@@ -1,0 +1,24 @@
+.imagencartel {
+    display: flex;
+    justify-content: $alineacion;
+    margin-top: 30px;
+}
+
+.textoinicio {
+    margin: 30px 100px 30px 100px;
+}
+
+.parrafo1inicio {
+    text-align: $alineacion;
+    font-size: xx-large;
+}
+
+.parrafo2inicio {
+    @extend .parrafo1inicio;
+    margin: 30px;
+    border: 10px double chocolate;
+}
+
+.color-boton{
+    background-color: #DD9787;
+}
