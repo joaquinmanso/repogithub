@@ -5,15 +5,15 @@
 }
 
 .titulodir{
-    display: flex;
-    justify-content: $alineacion;
+    text-align: $alineacion;
+    text-transform: capitalize;
     font-size: xx-large;
     text-decoration: underline;
 }
 
 .textodir{
-    display: flex;
-    justify-content: $alineacion;
+    text-align: $alineacion;
+    text-transform: uppercase;
     margin: 20px 600px;
     padding: 10px 5px 10px 5px;
     border: 10px double chocolate;

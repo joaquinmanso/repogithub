@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+.bkc {
+    background-color: #523A34;
+}
+
+header {
+    padding: 20px;
+    font-size: large;
+    display: grid;
+    justify-content: $alineacion;
+    background-color: #B87D4B;
+}
+
+main {
+    background-color: #E5B25D;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    text-align: $alineacion;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    padding: 3em;
+    margin-bottom: 0;
+    background-color: #F2DD6E;
+}
+
+img{
+    border: 10px double #250902;
+}
+
+.img-footer{
+    border: none;
+}

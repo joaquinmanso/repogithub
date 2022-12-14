@@ -1,0 +1,17 @@
+.info-foto{
+    display: flex;
+    padding: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: #CD8B76;
+    border: 10px outset #FCF6B1;
+    align-items: $alineacion;
+    justify-content: space-around;
+}
+
+.img-txt{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
