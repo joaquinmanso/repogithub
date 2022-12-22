@@ -6,17 +6,19 @@
 
 .textoinicio {
     margin: 30px 100px 30px 100px;
+    display: flex;
+    justify-content: $alineacion;
 }
 
 .parrafo1inicio {
     text-align: $alineacion;
     font-size: xx-large;
+    background-color: #B87D4B;
 }
 
 .parrafo2inicio {
     @extend .parrafo1inicio;
-    margin: 30px;
-    border: 10px double chocolate;
+    border: 10px double beige;
 }
 
 .color-boton{

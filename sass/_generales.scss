@@ -39,10 +39,16 @@ footer {
     background-color: #F2DD6E;
 }
 
-img{
+.imagen-agrandar {
     border: 10px double #250902;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
-.img-footer{
+.imagen-agrandar:hover {
+    transform: scale(2);
+}
+
+.img-footer {
     border: none;
 }
